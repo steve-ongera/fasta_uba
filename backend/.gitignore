@@ -1,0 +1,38 @@
+# Python / Django
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs & Temporary Files
+*.log
+celerybeat-schedule
+celerybeat.pid
+
+# Node / Frontend (if keeping a React/Vite app inside the repo)
+node_modules/
+dist/
+build/
+.vite/
