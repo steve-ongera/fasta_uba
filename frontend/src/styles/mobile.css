@@ -1,0 +1,42 @@
+/* src/styles/mobile.css — responsive overrides, loaded after web.css */
+
+@media (max-width: 860px) {
+  .ff-navbar { padding: 14px 16px; }
+  .ff-navbar__links { gap: 12px; font-size: 14px; }
+  .ff-navbar__user { display: none; }
+
+  .ff-home__hero { padding: 32px 20px; gap: 28px; }
+  .ff-home__hero-text h1 { font-size: 36px; }
+  .ff-home__hero-text p { font-size: 16px; }
+  .ff-home__features { grid-template-columns: repeat(2, 1fr); padding: 16px 20px 48px; }
+
+  .ff-auth-card { padding: 24px; }
+  .ff-field-row { flex-direction: column; gap: 0; }
+
+  /* stack the panel above a shorter map instead of a side-by-side split */
+  .ff-booking, .ff-tracking, .ff-driver-dashboard {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .ff-booking__panel, .ff-tracking__panel, .ff-driver-dashboard__panel {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--ff-gray-100);
+    max-height: 60vh;
+  }
+  .ff-booking__map, .ff-tracking__map, .ff-driver-dashboard__map {
+    min-height: 280px;
+  }
+
+  .ff-stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .ff-trip-list__row { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+
+@media (max-width: 420px) {
+  .ff-home__hero-text h1 { font-size: 30px; }
+  .ff-home__cta { flex-direction: column; }
+  .ff-home__cta .ff-btn { width: 100%; text-align: center; }
+  .ff-stats-grid { grid-template-columns: 1fr 1fr; }
+  .ff-vehicle-option__label small { display: none; }
+}
