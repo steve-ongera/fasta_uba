@@ -1,6 +1,6 @@
-# FastaFasta Uba
+# FastaFasta 🚗
 
-**FastaFasta Uba** is a full-stack ride-hailing web application built to work like Uber — riders request trips, nearby drivers get matched in real time, both parties track the trip live on a map, fares are calculated automatically, and trips complete with ratings and payment.
+**FastaFasta** is a full-stack ride-hailing web application built to work like Uber — riders request trips, nearby drivers get matched in real time, both parties track the trip live on a map, fares are calculated automatically, and trips complete with ratings and payment.
 
 - **Backend:** Django + Django REST Framework + Django Channels (WebSockets for live tracking/matching) + Celery (background jobs / scheduler)
 - **Frontend:** React (Vite) + Google Maps JavaScript API
