@@ -1,5 +1,5 @@
 """
-core/celery.py
+backend/celery.py
 Celery application instance. Imported by core/__init__.py so `celery -A core
 worker` and `celery -A core beat` both pick it up automatically.
 """
